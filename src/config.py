@@ -4,8 +4,8 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "ShortestPath"
-    DATA_PATH: str = "data"
-    PLACE_NAME: str = "Hoan Kiem, Hanoi, Vietnam"
+    DATA_PATH: str = "src/data"
+    PLACE_NAME: str = "Hoan Kiem District, Hanoi, Vietnam"
 
     # Development variables
     APP_ENV: str = "development"
