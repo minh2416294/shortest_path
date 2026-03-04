@@ -19,5 +19,6 @@ Thumbs.db
 .coverage
 
 # --- Data ---
-data/*.json
-!data/.gitkeep
+src/data/*.json
+!src/data/.gitkeep
+src/cache/*.json
