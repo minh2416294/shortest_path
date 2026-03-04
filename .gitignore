@@ -1,0 +1,23 @@
+# --- Python Core & Runtime ---
+__pycache__/
+*.py[cod]
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+
+# --- IDE & OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.iml
+
+# --- Testing & Code Quality ---
+.pytest_cache/
+.coverage
+
+# --- Data ---
+data/*.json
+!data/.gitkeep

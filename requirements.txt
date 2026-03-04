@@ -1,0 +1,5 @@
+osmnx==1.9.1
+networkx==3.2.1
+streamlit==1.32.0
+folium==0.15.1
+streamlit-folium==0.18.0
