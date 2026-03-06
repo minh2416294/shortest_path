@@ -17,6 +17,7 @@ dependencies = [
     "osmnx>=1.9.1",
     "networkx>=3.2.1",
     "folium>=0.15.1",
+    "streamlit-folium==0.18.0",
     "pydantic-settings>=2.1.0",
     "pytest>=7.4.0",
     "ruff>=0.1.0",
