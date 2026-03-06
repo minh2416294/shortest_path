@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "shortest-path"
 version = "0.1.0"
-description = ""
+description = "An intelligent pathfinding system that calculates the shortest route between two locations on a real-world map using the A (A-Star) search algorithm*. The project streamlines the process from geographical data extraction to optimal route calculation and interactive web visualization."
 authors = [
     {name = "Tran Binh Minh", email = "minh2416294@gmail.com"}
 ]
