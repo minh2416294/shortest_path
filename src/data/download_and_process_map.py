@@ -8,22 +8,22 @@ settings = get_settings()
 
 def download_and_preprocess_map(place_name, output_dir):
     print(f"Downloading map for {place_name}...")
-    G = ox.graph_from_place(place_name, network_type='drive') # Only install drive path
-    print(f"Finished downloading! Graph has {len(G.nodes)} nodes and {len(G.edges)} edges.")
+    g = ox.graph_from_place(place_name, network_type='drive') # Only install drive path
+    print(f"Finished downloading! Graph has {len(g.nodes)} nodes and {len(g.edges)} edges.")
 
     nodes_data = {}
     edges_data = []
 
     print("Preprocessing map...")
     # Get latitude and longitude
-    for node_id, data in G.nodes(data=True):
+    for node_id, data in g.nodes(data=True):
         nodes_data[node_id] = {
             "y": data['y'],  # get latitude
             "x": data['x']  # get longitude
         }
 
     # Get edges and path length
-    for u, v, key, data in G.edges(keys=True, data=True):
+    for u, v, key, data in g.edges(keys = True, data = True):
         edges_data.append({
             "u": u,
             "v": v,

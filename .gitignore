@@ -1,6 +1,7 @@
 # --- Python Core & Runtime ---
 __pycache__/
 *.py[cod]
+*.egg-info
 
 # --- Virtual Environments ---
 .venv/
@@ -19,6 +20,6 @@ Thumbs.db
 .coverage
 
 # --- Data ---
-src/data/*.json
+*.json
 !src/data/.gitkeep
 src/cache/*.json
