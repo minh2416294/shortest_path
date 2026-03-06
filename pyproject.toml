@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shortest-path"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Tran Binh Minh", email = "minh2416294@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+# CORE DEPENDENCIES
+dependencies = [
+    "osmnx>=1.9.1",
+    "networkx>=3.2.1",
+    "folium>=0.15.1",
+    "pydantic-settings>=2.1.0",
+    "pytest>=7.4.0",
+    "ruff>=0.1.0",
+    "streamlit>=1.32.0"
+]
+
+[project.urls]
+"Source" = "https://github.com/minh2416294/shortest-path"
+
+# TOOLS CONFIGURATION
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-v"
+
+# PACKAGE DISCOVERY
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src"]
+namespaces = false
